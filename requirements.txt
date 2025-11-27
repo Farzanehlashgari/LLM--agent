@@ -1,0 +1,32 @@
+# Core CrewAI dependencies
+crewai==1.5.0
+crewai-tools==1.5.0
+
+# LLM providers
+openai>=1.55.0
+langchain-google-genai==2.0.4
+litellm==1.52.6
+
+# Telegram bot
+python-telegram-bot==21.7
+pyTelegramBotAPI==4.24.0
+
+# Scheduling
+schedule==1.2.2
+APScheduler==3.10.4
+
+# Utilities
+python-dotenv
+pydantic
+pydantic-settings
+requests
+
+# Data handling
+pandas==2.2.3
+
+# Logging
+loguru==0.7.2
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0

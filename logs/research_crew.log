@@ -1,0 +1,42 @@
+2025-11-21 11:17:23 | INFO     | __main__:setup_logging - Logging configured
+2025-11-21 11:17:23 | INFO     | __main__:test_connection - Testing Telegram connection...
+2025-11-21 11:17:24 | INFO     | src.telegram_notifier:__init__ - TelegramNotifier initialized for chat_id: 5862597538
+2025-11-21 11:17:24 | INFO     | src.telegram_notifier:test_connection - Connected to Telegram bot: @LLMsagent_bot
+2025-11-21 11:17:24 | INFO     | src.telegram_notifier:send_message - Successfully sent 1 message chunk(s)
+2025-11-21 11:17:24 | INFO     | __main__:test_connection - ✅ Telegram connection test passed
+2025-11-21 11:17:54 | INFO     | __main__:setup_logging - Logging configured
+2025-11-21 11:17:54 | INFO     | __main__:run_once - Running research crew once...
+2025-11-21 11:17:54 | ERROR    | __main__:run_once - ❌ Execution error: Fallback to LiteLLM is not available
+2025-11-21 11:21:08 | INFO     | __main__:setup_logging - Logging configured
+2025-11-21 11:21:08 | INFO     | __main__:run_once - Running research crew once...
+2025-11-21 11:21:08 | ERROR    | __main__:run_once - ❌ Execution error: Google Gen AI native provider not available, to install: uv add "crewai[google-genai]"
+2025-11-21 11:22:12 | INFO     | __main__:setup_logging - Logging configured
+2025-11-21 11:22:12 | INFO     | __main__:run_once - Running research crew once...
+2025-11-21 11:22:14 | INFO     | src.crew:__init__ - MentalHealthResearchCrew initialized successfully
+2025-11-21 11:22:15 | INFO     | src.telegram_notifier:__init__ - TelegramNotifier initialized for chat_id: 5862597538
+2025-11-21 11:22:15 | INFO     | src.crew:execute_async - Starting async crew execution: exec_1763724135
+2025-11-21 11:22:15 | ERROR    | src.crew:execute_async - Async crew execution failed: Error importing native provider: OPENAI_API_KEY is required
+2025-11-21 11:22:16 | INFO     | src.telegram_notifier:send_message - Successfully sent 1 message chunk(s)
+2025-11-21 11:22:16 | ERROR    | __main__:run_once - ❌ Research failed: Async crew execution failed: Error importing native provider: OPENAI_API_KEY is required
+2025-11-21 11:25:54 | INFO     | __main__:setup_logging - Logging configured
+2025-11-21 11:25:54 | INFO     | __main__:run_once - Running research crew once...
+2025-11-21 11:25:57 | INFO     | src.crew:__init__ - MentalHealthResearchCrew initialized successfully
+2025-11-21 11:25:57 | INFO     | src.telegram_notifier:__init__ - TelegramNotifier initialized for chat_id: 5862597538
+2025-11-21 11:25:57 | INFO     | src.crew:execute_async - Starting async crew execution: exec_1763724357
+2025-11-21 11:25:58 | ERROR    | src.crew:execute_async - Async crew execution failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2025-11-21 11:25:58 | INFO     | src.telegram_notifier:send_message - Successfully sent 1 message chunk(s)
+2025-11-21 11:25:58 | ERROR    | __main__:run_once - ❌ Research failed: Async crew execution failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2025-11-21 11:28:32 | INFO     | __main__:setup_logging - Logging configured
+2025-11-21 11:28:32 | INFO     | __main__:run_once - Running research crew once...
+2025-11-21 11:28:35 | INFO     | src.crew:__init__ - MentalHealthResearchCrew initialized successfully
+2025-11-21 11:28:35 | INFO     | src.telegram_notifier:__init__ - TelegramNotifier initialized for chat_id: 5862597538
+2025-11-21 11:28:35 | INFO     | src.crew:execute_async - Starting async crew execution: exec_1763724515
+2025-11-21 11:32:46 | INFO     | src.crew:execute_async - Async crew execution completed in 251.08s
+2025-11-21 11:32:48 | WARNING  | src.telegram_notifier:send_message - Markdown parsing failed, sending as plain text
+2025-11-21 11:32:48 | WARNING  | src.telegram_notifier:send_message - Markdown parsing failed, sending as plain text
+2025-11-21 11:32:49 | WARNING  | src.telegram_notifier:send_message - Markdown parsing failed, sending as plain text
+2025-11-21 11:32:49 | WARNING  | src.telegram_notifier:send_message - Markdown parsing failed, sending as plain text
+2025-11-21 11:32:49 | WARNING  | src.telegram_notifier:send_message - Markdown parsing failed, sending as plain text
+2025-11-21 11:32:49 | WARNING  | src.telegram_notifier:send_message - Markdown parsing failed, sending as plain text
+2025-11-21 11:32:52 | INFO     | src.telegram_notifier:send_message - Successfully sent 10 message chunk(s)
+2025-11-21 11:32:52 | INFO     | __main__:run_once - ✅ Research completed and sent successfully

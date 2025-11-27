@@ -1,0 +1,83 @@
+search_research:
+  description: >
+    Conduct a comprehensive search for recent research, applications, and 
+    developments in LLM applications for mental health. Focus on:
+    
+    1. Clinical applications (diagnosis, screening, treatment support)
+    2. Therapeutic chatbots and conversational agents
+    3. Patient monitoring and early intervention systems
+    4. Sentiment analysis and mental health detection from text
+    5. Cognitive behavioral therapy (CBT) automation
+    6. Crisis intervention and suicide prevention
+    7. Personalized treatment recommendations
+    8. Clinical decision support systems
+    9. Mental health education and awareness
+    10. Ethical considerations and bias mitigation
+    
+    Search for:
+    - Recent academic papers (2023-2025)
+    - Clinical trials and validation studies
+    - Industry applications and products
+    - Regulatory perspectives (FDA, EMA)
+    - Open-source projects and frameworks
+    
+    Provide URLs, paper titles, authors, and key findings for each source.
+  expected_output: >
+    A structured collection of at least 15-20 relevant sources with:
+    - Title and URL
+    - Publication date
+    - Authors/Organization
+    - Key findings (3-5 bullet points per source)
+    - Application category
+    - Clinical validation status (if applicable)
+
+analyze_findings:
+  description: >
+    Analyze the research findings from the search task and provide:
+    
+    1. **Trend Analysis**: Identify major trends and emerging patterns
+    2. **Clinical Effectiveness**: Assess evidence for clinical efficacy
+    3. **Technology Assessment**: Evaluate LLM architectures and approaches used
+    4. **Ethical & Safety Considerations**: Identify risks, biases, limitations
+    5. **Gaps & Opportunities**: Highlight underexplored areas
+    6. **Comparative Analysis**: Compare different approaches and their outcomes
+    
+    Context from previous task: {search_results}
+  expected_output: >
+    A structured analysis containing:
+    - Executive summary (200 words)
+    - 5-7 major trends with supporting evidence
+    - Clinical effectiveness assessment by application type
+    - Technology landscape overview
+    - Key ethical considerations and recommendations
+    - Research gaps and future directions
+    - Comparative table of major approaches
+
+generate_report:
+  description: >
+    Create a comprehensive report synthesizing all research and analysis. 
+    The report should be suitable for both technical and clinical audiences.
+    
+    Structure:
+    1. Executive Summary
+    2. Introduction & Methodology
+    3. Key Findings by Application Area
+    4. Technology Landscape
+    5. Clinical Effectiveness & Validation
+    6. Ethical Considerations & Safety
+    7. Notable Projects & Implementations
+    8. Research Gaps & Future Directions
+    9. Recommendations
+    10. References (with URLs)
+    
+    Context from previous tasks: {analysis_results}
+    
+    Use clear headings, bullet points for key findings, and cite all sources.
+    Include specific metrics, study sizes, and validation results where available.
+  expected_output: >
+    A comprehensive markdown-formatted report (2000-3000 words) with:
+    - Clear structure and headings
+    - Evidence-based findings
+    - Proper citations with URLs
+    - Actionable recommendations
+    - Formatted for easy reading in Telegram
